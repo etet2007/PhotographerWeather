@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.lqtian.android.photographerweather.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_weight="0.76">
+        <TextView
+            android:id="@+id/city_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="深圳"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="32sp"
+            android:layout_marginTop="41dp"/>
+        <TextView
+            android:id="@+id/weather_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="阴"
+            android:textSize="25sp"
+            android:layout_below="@+id/city_textView"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:id="@+id/currentTemperture_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="24"
+            android:layout_marginTop="29dp"
+            android:textSize="120sp"
+            android:layout_below="@+id/city_textView"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="171dp"
+        android:layout_weight="0.59"
+        android:background="@android:color/holo_orange_dark"
+        >
+
+        <TextClock
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textClock"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/white"
+            android:textSize="35dp"/>
+
+        <TextView
+            android:id="@+id/sunRiseAndDown_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="06:00|18:50"
+            android:textColor="@android:color/white"
+            android:textSize="40sp"
+            android:layout_marginTop="35dp"
+            android:layout_below="@+id/textClock"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+</LinearLayout>
+
+
+</RelativeLayout>
